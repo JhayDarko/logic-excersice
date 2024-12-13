@@ -26,6 +26,7 @@ public class AnomaliaManager {
     }
 
     public void mostrarAnomalias() {
+        int cantidad = 0;
         if (anomalias.isEmpty()) {
             System.out.println("No hay anomalías registradas.");
             return;
@@ -33,7 +34,9 @@ public class AnomaliaManager {
         System.out.println("=== Lista de Anomalías ===");
         for (Anomalia anomalia : anomalias) {
             System.out.println(anomalia);
+            cantidad++;
         }
+        System.out.println("Cantidad de anomalias: " + cantidad);
     }
 
     public void mostrarMenu() {

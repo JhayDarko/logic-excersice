@@ -25,6 +25,7 @@ public class AgenteManager {
     }
 
     public void mostrarAgentes() {
+        int cantidad = 0;
         if (agentes.isEmpty()) {
             System.out.println("No hay agentes registrados.");
             return;
@@ -32,7 +33,9 @@ public class AgenteManager {
         System.out.println("=== Lista de Agentes ===");
         for (Agente agente : agentes) {
             System.out.println(agente);
+            cantidad++;
         }
+        System.out.println("Cantidad de agentes: " + cantidad);
     }
 
     public void mostrarMenu() {
